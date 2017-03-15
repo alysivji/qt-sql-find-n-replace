@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmMain</class>
+ <widget class="QDialog" name="frmMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SQL Find-n-Replace</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>false</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="6" column="0" colspan="3">
+    <widget class="QLabel" name="lblResultingQuery">
+     <property name="text">
+      <string>&lt;b&gt;Resulting SQL Query:&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QLineEdit" name="lneCharToReplace"/>
+   </item>
+   <item row="1" column="0" colspan="7">
+    <widget class="QTextEdit" name="txtSQLToChange">
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="7">
+    <widget class="QTextBrowser" name="txtResultingQuery"/>
+   </item>
+   <item row="3" column="5" colspan="2">
+    <widget class="QPushButton" name="btnBrowse">
+     <property name="text">
+      <string>Browse...</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QLabel" name="lblEnterSQL">
+     <property name="text">
+      <string>&lt;b&gt;Enter SQL Query:&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="3">
+    <widget class="QLabel" name="lblCharReplaceWith">
+     <property name="text">
+      <string>&lt;b&gt;Character To Replace With:&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="4">
+    <widget class="QLineEdit" name="lneCharReplaceWith"/>
+   </item>
+   <item row="2" column="0" colspan="7">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>807</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QLabel" name="lblCharToReplace">
+     <property name="text">
+      <string>&lt;b&gt;Character To Replace:&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="7">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>807</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="5" colspan="2">
+    <widget class="QPushButton" name="btnConvert">
+     <property name="text">
+      <string>Convert</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="lblSelectBaseTables">
+     <property name="text">
+      <string>&lt;b&gt;Load Base Tables:&lt;/b&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="4">
+    <widget class="QLineEdit" name="lneBaseTables"/>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>txtSQLToChange</tabstop>
+  <tabstop>lneBaseTables</tabstop>
+  <tabstop>btnBrowse</tabstop>
+  <tabstop>lneCharToReplace</tabstop>
+  <tabstop>lneCharReplaceWith</tabstop>
+  <tabstop>btnConvert</tabstop>
+  <tabstop>txtResultingQuery</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

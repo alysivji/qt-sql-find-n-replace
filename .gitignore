@@ -1,0 +1,4 @@
+.vscode/
+*.pyc
+base-tables.txt
+sql-query.txt
